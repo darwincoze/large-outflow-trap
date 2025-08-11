@@ -1,0 +1,18 @@
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.mytrap]
+path = "out/LargeOutflowTrap.sol/LargeOutflowTrap.json"
+response_contract = "0xa42d5b1c8724315e11Cb2d89e2490841CE88503c"
+response_function = "executeResponse(bytes)"
+cooldown_period_blocks = 33
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 1
+private_trap = true
+whitelist = ["0xb7ec4acb18b8de722bebd2bd5311d08b21a838c9"]
+address = "0x4a2617711517ff73FE5fCAE72A9557f9a59a70ec"
